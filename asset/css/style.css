@@ -224,7 +224,7 @@ body {
 /* main-right */
 .hero .main-right {
     padding-top: 64px;
-    margin-left: 130px;
+    margin-left: 230px;
 }
 
 .hero .main-right .title {
@@ -266,6 +266,7 @@ body {
 .hero .main-hero .watch-video {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .hero .main-hero .watch-video .sub-icon {
@@ -306,6 +307,7 @@ body {
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.22; /* 122.727% */
+    margin-right: 14px;
 }
 
 .hero .main-right .coursce p {
@@ -313,7 +315,9 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.22;
+    margin-right: 28px;
 }
+
 
 
 
