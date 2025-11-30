@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* common */
+ a {
+    text-decoration: none;
+ }
+
+ .btn{
+    display: flex;
+    width: 118px;
+    height: 50px;   
+    border-radius: 24.5px;
+    background: #171100;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
+    align-items: center;
+    justify-content: center;
+ }
+
+.btn:hover {
+    opacity: 0.9;
+  }
+
+/* header */
+.header {
+    background-color: orange;
+    padding: 28px 0 0;
+    /* background-color: #FFFCF4; */
+}
+
+.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin:0 auto;
+}
+
+.header .top_header {
+    display: flex;
+    padding: 8px 0;
+
+}
+
+.header .top_header .logo{
+    display: flex;
+    cursor: pointer;
+}
+.header .nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header .nav ul  {
+    display: flex;
+    position: relative;
+}
+
+.header .nav a { 
+    display: flex;
+    padding: 8px 21px;
+    color: #171100;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.header .top_header .active{
+    font-weight: 600;
+    position: relative;
+}
+
+.header .top_header .active::after{
+    position: absolute;
+    content: " ";
+    display:block;
+    left: 22px;
+    top:31px;
+    width: 12px;
+    height: 2px;
+    background-color:#171100;
+}
+
+.header .top_header .nav ul li a:hover {
+    text-shadow: 1px 1px 1px #171100;
+}
+
+.header .top_header .nav li:first-child a:hover {
+    text-shadow: none;
+}
+
+.header .top_header .header_btn {
+    border-radius: 24.5px;
+    background: #171100;
+    margin-left: 49px;
+    width: 144px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    cursor: pointer;
+}
