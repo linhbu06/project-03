@@ -14,6 +14,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+    --font-family:"Sen",sans-serif;
+    --primary-color:#FFB900;
+}
+
 /* common */
  a {
     text-decoration: none;
@@ -22,27 +27,32 @@ body {
  .btn{
     display: flex;
     width: 118px;
-    height: 50px;   
-    border-radius: 24.5px;
+    height: 50px;
+    border-radius:999px;
     background: #171100;
     color: #FFF;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1.85; /* 185.714% */
-    align-items: center;
+    line-height: 1.85;
+    /*185.714%*/align-items: center;
     justify-content: center;
- }
+    -webkit-border-radius:999px;
+    -moz-border-radius:999px;
+    -ms-border-radius:999px;
+    -o-border-radius:999px;
+}
 
 .btn:hover {
     opacity: 0.9;
-  }
+}
 
 /* header */
 .header {
     /* background-color: orange; */
     padding: 28px 0 0;
     background-color: #FFFCF4;
+    /* background-color: orange; */
 }
 
 .fixed {
@@ -124,3 +134,189 @@ body {
     line-height: 1.75; /* 175% */
     cursor: pointer;
 }
+
+/* hero */
+.hero {
+    padding: 56px 0 65px 0;
+    background-color: #FFFCF4;
+    /* background-color: orange; */
+}
+
+.hero .main-hero {
+    display: flex;
+}
+
+.hero .main-left {
+    width: 48%;
+    position: relative;
+}
+
+.hero .main-right {
+    width: 52%;
+}
+
+/* main-left */
+
+.hero .main-left .hero-img {
+    display: block;
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hero .main-hero .list-main {
+    position: absolute;
+    padding: 24px;
+    right: -72px;
+    bottom: 48px;
+    background:#fff;
+    width: 270px;
+    border-radius: 12px;
+}
+
+.hero .main-hero .list-main .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero .main-hero .list-main .item + .item {
+    margin-top: 22px;
+}
+
+.hero .main-hero .list-main .item:nth-child(2) .icon {
+    background-color: #FCEFFF;
+}
+
+.hero .main-hero .list-main .item:nth-child(3) .icon {
+    background-color: #EBEAFF;
+}
+
+.hero .main-hero .list-main .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color:#FFF9E8 ;
+}
+
+.hero .main-hero .list-main .title {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.hero .main-hero .list-main .desc {
+    color: #171100;
+    font-size:1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+/* main-right */
+.hero .main-right {
+    padding-top: 64px;
+    margin-left: 130px;
+}
+
+.hero .main-right .title {
+    color: #171100;
+    font-family: var(--font-family);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+    margin-bottom: 22px;
+}
+
+.hero .main-right .desc {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero .main-right .cta {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .main-right .cta .play-btn {
+    background-color: var(--primary-color);
+    border: none;
+    width: 180px;
+    height: 64px ;  
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+    margin-right: 28px;
+}
+
+.hero .main-hero .watch-video {
+    display: flex;
+    align-items: center;
+}
+
+.hero .main-hero .watch-video .sub-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 14px 0 0 ;
+}
+
+.hero .main-hero .watch-video span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero .main-right .sub-desc {
+    margin-top: 48px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero .main-right .coursce {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero .main-right .coursce strong {
+    color: #171100;
+    font-family: var(--font-family);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.22; /* 122.727% */
+}
+
+.hero .main-right .coursce p {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.22;
+}
+
+
+
+
+
+
