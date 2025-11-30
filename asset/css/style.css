@@ -40,9 +40,9 @@ body {
 
 /* header */
 .header {
-    background-color: orange;
+    /* background-color: orange; */
     padding: 28px 0 0;
-    /* background-color: #FFFCF4; */
+    background-color: #FFFCF4;
 }
 
 .fixed {
