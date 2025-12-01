@@ -538,6 +538,7 @@ body {
 }
 
 .features-one .sub-left {
+    width: 49%;
     display: flex;
     gap: 0 30px;
 }
@@ -575,6 +576,49 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+}
+
+/* features-two */
+.features-two {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features-two .sub-main {
+    display: flex;
+}
+
+.features-two .main-left {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-two .main-left .desc {
+    margin-top: 16px;
+}
+
+.features-two .main-left .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.features-two .main-right {
+    width:41% ;
+    margin-left: auto;
+    
+}
+
+.features-two .main-right img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 
