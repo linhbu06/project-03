@@ -428,6 +428,7 @@ body {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
+    padding-right: 20px;
 }
 
 .popular .popular-bottom .infor .desc {
@@ -526,10 +527,54 @@ body {
     line-height: 1.53; /* 153.846% */
 }
 
+/* features */
+.features-one {
+    margin-top: 135px;
+    padding: 65px 0;
+}
 
+.features-one .sub-features {
+    display: flex;
+}
 
+.features-one .sub-left {
+    display: flex;
+    gap: 0 30px;
+}
 
+.features-one .sub-right {
+    width: 41%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+}
 
+.features-one .sub-left img {
+    border-radius: 16px;
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+}
 
+.features-one .sub-left .lower {
+    margin-top: 34px;
+}
+
+.features-one .sub-right .desc {
+    margin-top: 16px;
+}
+
+.features-one .sub-right  .cta-btn {
+    margin-top: 32px;
+    background-color: var(--primary-color);
+    min-width: 137px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
 
 
