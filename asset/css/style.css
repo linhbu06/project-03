@@ -755,12 +755,85 @@ body {
     background-color: var(--primary-color);
 }
 
+/* footer */
+.footer {
+    /* padding-top: 96px; */
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
 
+.footer .row {
+    display: flex;
+    border-bottom: 1px solid #59554B;
+    /* border-bottom: 1px solid red; */
+}
 
+.footer .row .column {
+    width: 21%;
+}
 
+.footer .row .column:first-child {
+    width: 35%;
+}
 
+.footer .column .desc {
+    width: 267px;
+    margin: 18px 0;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
 
+.footer .column .social {
+    display: flex;
+    gap: 0 18px;
+}
 
+.footer .column .title {
+    display:inline-block;
+    /* width: calc(100% + 28px); */
+    padding-right:28px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    border-bottom:1px solid #59554B ;
+    padding-bottom: 14px;
+}
 
+.footer .column .list {
+    margin-top: 28px;
+}
 
+.footer .column .list li {
+    margin-top: 12px;
+}
 
+.footer .column .list li:last-child {
+    padding-bottom: 38px;
+}
+
+.footer .column .list a {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */ 
+
+}
+
+.footer .column .list strong {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .copyright {
+    padding: 28px 0;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
