@@ -757,8 +757,8 @@ body {
 
 /* footer */
 .footer {
-    /* padding-top: 96px; */
-    padding: 96px 135px 0;
+    padding-top: 96px;
+    /* padding: 96px 135px 0; */
     background: #2E2100;
 }
 
